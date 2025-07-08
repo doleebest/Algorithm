@@ -1,0 +1,8 @@
+-- 코드를 입력하세요
+SELECT NAME, COUNT(*) AS COUNT
+from animal_ins
+
+# where count(name) >= 2
+group by name
+having count(name) >= 2
+order by name
